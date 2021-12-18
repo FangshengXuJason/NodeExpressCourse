@@ -1,7 +1,8 @@
-require('./db/connect')
-
 const express = require('express')
 const app = express()
+const tasks = require('./routes/tasks')
+const conneectDB = require('./db/connect')
+require('dotenv').config()
 
 // middleware
 app.use(express.json()); // JSON file format
@@ -12,23 +13,16 @@ app.get('/hello', (req, res) => {
     res.end()
 })
 
-const tasks = require('./routes/tasks')
 app.use('/api/v1/tasks', tasks)
 
-/* // dont use: 
-app.get('/', (req,res) => {
-    res.send(req.body)
-}) */
-
-/*
-RESTful API <-> CRUDi
-
-    Post <-> Create
-    Get <-> Read
-Put(Patch in our case) <-> Update
-    Delete <-> Delete
-*/
-
-
 const port = 3000
-app.listen(port, console.log(`server is listening on port ${port}...`))
+const start = async () => {
+    try {
+        await conneectDB(process.env.MONGO_URI)
+        app.listen(port, console.log(`server is listening on port ${port}...`))
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+start()
