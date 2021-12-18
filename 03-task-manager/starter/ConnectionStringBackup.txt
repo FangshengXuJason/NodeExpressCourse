@@ -1,1 +1,0 @@
-mongodb+srv://<username>:<password>@nodeexpressprojects.2deue.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
