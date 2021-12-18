@@ -1,13 +1,9 @@
-console.log('The start of Task Manager App')
+require('./db/connect')
 
-// const { application } = require('express') // what is it? 
 const express = require('express')
 const app = express()
 
-
-
 // middleware
-/* // app.use(express.static('./public')); // Front-end code */
 app.use(express.json()); // JSON file format
 
 // routes
