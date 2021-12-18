@@ -5,13 +5,8 @@ const conneectDB = require('./db/connect')
 require('dotenv').config()
 
 // middleware
+app.use(express.static('./public')) // import front-end code
 app.use(express.json()); // JSON file format
-
-// routes
-app.get('/hello', (req, res) => {
-    res.send('Hello back! This is the Task Manager App')
-    res.end()
-})
 
 app.use('/api/v1/tasks', tasks)
 
