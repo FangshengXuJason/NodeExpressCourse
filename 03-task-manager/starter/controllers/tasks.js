@@ -1,6 +1,6 @@
 const Task = require('../models/Task')
-const asyncWrapper = require('../middleware/async')
-
+const asyncWrapper = require('../middleware/async') // gets rid of trycatch blocks
+const {createCustomError} = require('../errors/custom-error') // import custom error
 
 const getAllTasks = asyncWrapper(async (req, res) => {
     const tasks = await Task.find({})
@@ -17,10 +17,7 @@ const getTask = asyncWrapper(async (req, res, next) => {
     const task = await Task.findOne({_id:taskID})
     // if task is empty
     if (!task) {
-        const error = new Error('Not Found')
-        error.status = 404
-        return next(error)
-        // return res.status(404).json({msg:`No tasks with id: ${taskID}`})
+        return next(createCustomError(`No tasks with id: ${taskID}`, 404))
     }
     // response
     res.status(201).json({task})
@@ -31,7 +28,7 @@ const deleteTask = asyncWrapper(async (req, res) => {
     const task = await Task.findOneAndDelete({_id:taskID})
     // if task is empty
     if (!task) {
-        return res.status(404).json({msg:`No tasks with id: ${taskID}`})
+        return next(createCustomError(`No tasks with id: ${taskID}`, 404))
     }
     // response 
     res.status(200).json({task: null, status: 'success'})  
@@ -45,7 +42,7 @@ const updateTask = asyncWrapper(async (req, res) => {
     })
     // if task is empty
     if (!task) {
-        return res.status(404).json({msg:`No tasks with id: ${taskID}`})
+        return next(createCustomError(`No tasks with id: ${taskID}`, 404))
     }
     res.status(200).json({task})
 })
