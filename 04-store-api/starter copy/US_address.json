@@ -1,131 +1,51 @@
 [
   {
-    "name": "accent chair",
-    "price": 25,
-    "company": "marcos",
-    "rating": 4
+    "name": "Seattle University: College of Science & Engineering",  
+    "Address_Line_1": "901 12th Ave",
+    "Address_Line_2": "",
+    "City": "Seattle",
+    "State": "WA",
+    "Zip_Code": 98122
+  }, 
+  {
+    "name": "Optimism Brewing Company",  
+    "Address_Line_1": "1158 Broadway",
+    "Address_Line_2": "",
+    "City": "Seattle",
+    "State": "WA",
+    "Zip_Code": 98122
+  }, 
+  {
+    "name": "Suzzallo and Allen Libraries",  
+    "Address_Line_1": "4000 15th Ave NE",
+    "Address_Line_2": "",
+    "City": "Seattle",
+    "State": "WA",
+    "Zip_Code": 98195
+  },  
+  {
+    "name": "Valley Life Sciences Building",  
+    "Address_Line_1": "Harmon Way",
+    "Address_Line_2": "",
+    "City": "Berkeley",
+    "State": "CA",
+    "Zip_Code": 94720
   },
   {
-    "name": "albany sectional",
-    "price": 109,
-    "company": "liddy",
-    "rating": 5
+    "name": "Soldier Field",  
+    "Address_Line_1": "1410 Special Olympics Dr",
+    "Address_Line_2": "",
+    "City": "Chicago",
+    "State": "IL",
+    "Zip_Code": 60605
   },
   {
-    "name": "albany table",
-    "price": 309,
-    "company": "liddy",
-    "rating": 4.9
-  },
-  {
-    "name": "armchair",
-    "price": 125,
-    "company": "marcos",
-    "rating": 4.8
-  },
-  {
-    "name": "bar stool",
-    "price": 40,
-    "company": "liddy",
-    "rating": 4.6
-  },
-  {
-    "name": "dining table",
-    "price": 42,
-    "company": "ikea",
-    "rating": 4.55
-  },
-  {
-    "name": "emperor bed",
-    "price": 23,
-    "company": "ikea"
-  },
-  {
-    "name": "entertainment center",
-    "price": 59,
-    "featured": true,
-    "company": "caressa"
-  },
-  {
-    "name": "high-back bench",
-    "price": 39,
-    "featured": true,
-    "company": "ikea"
-  },
-
-  {
-    "name": "leather sofa",
-    "price": 99,
-    "company": "caressa"
-  },
-  {
-    "name": "modern bookshelf",
-    "price": 31,
-    "featured": true,
-    "company": "caressa"
-  },
-  {
-    "name": "modern poster",
-    "price": 30,
-    "company": "liddy"
-  },
-  {
-    "name": "shelf",
-    "price": 30,
-    "company": "ikea"
-  },
-  {
-    "name": "simple chair",
-    "price": 109,
-    "company": "liddy"
-  },
-  {
-    "name": "sofa set",
-    "price": 129,
-    "company": "marcos"
-  },
-  {
-    "name": "suede armchair",
-    "price": 15,
-    "company": "caressa"
-  },
-  {
-    "name": "utopia sofa",
-    "price": 79,
-    "featured": true,
-    "company": "liddy"
-  },
-  {
-    "name": "vase table",
-    "price": 120,
-    "featured": true,
-    "company": "marcos"
-  },
-  {
-    "name": "wooden bed",
-    "price": 25,
-    "company": "ikea"
-  },
-  {
-    "name": "wooden desk",
-    "price": 15,
-    "company": "ikea"
-  },
-  {
-    "name": "wooden desk",
-    "price": 40,
-    "company": "ikea"
-  },
-  {
-    "name": "wooden table",
-    "price": 23,
-    "featured": true,
-    "company": "caressa"
-  },
-  {
-    "name": "a first wooden table",
-    "price": 23,
-    "featured": true,
-    "company": "caressa"
+    "name": "Seminole Hard Rock Hotel & Casino - Hollywood, FL",  
+    "Address_Line_1": "1 Seminole Way",
+    "Address_Line_2": "",
+    "City": "Davie",
+    "State": "FL",
+    "Zip_Code": 33314
   }
+
 ]
